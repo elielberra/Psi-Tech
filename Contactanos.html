@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="CSS/Style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <title>Psi-Tech - Contactanos</title>
+    
+</head>
+<body>
+    
+    <header>
+        <img src="Images/Logo.jpg" class="imgLogo">
+
+        <nav class="menuNav">
+            <ul>
+                <li><a href="Index.html"> <i class="fas fa-home"></i> </a></li>
+                <li><a href="Inteligencia Artificial.html"> Inteligencia Artificial </a></li>
+                <li><a href="Áreas.html"> Áreas </a></li>
+                <li><a href="Socios Comerciales.html"> Socios Comerciales </a></li>
+                <li><a href="Contactanos.html"> Contactanos </a></li>
+            </ul>
+        </nav>        
+    </header>
+    
+    <section>
+        <div class="boxContactanos">
+            <div class="CV">
+                <form class="formCV" action="https://formsubmit.co/berraeliel@gmail.com" method="POST">
+                    <label> Adjuntá tu CV </label> <br>
+                        <input type="file" name="file" required> <br>
+                    <label> Podés dejarnos tu perfil de Linkedin también </label> <br>
+                        <input type="url" name="linkedin" placeholder="linkedin.com/in/nombre-apellido"> <br>
+                        <input type="hidden" name="_autoresponse" value="Gracias por dejarnos tu CV, lo vamos a tener en cuenta para futuras búsquedas laborales.">
+                    <label for="email"> Ingresá tu Email </label> <br>   
+                        <input type="email" name="email" required> <br>
+                        <input class="submit" type="submit" value="Enviar">
+                </form>
+            </div>
+                
+            <div class="mensaje">
+                <form id="form" action="https://formsubmit.co/berraeliel@gmail.com" method="POST"> 
+                    <label for="name"> Nombre y Apellido </label> <br>
+                        <input type="text" id="name" name="name" required autocomplete="on"> <br> 
+                    <label for="email"> Ingresá tu Email </label>
+                    <div id="inputBox">
+                        <input type="text" type="email" id="email" name="email" required autocomplete="on" onchange="validation()" onClick="validation()" onkeydown="validation()">
+                    </div>    
+                    <span id="text"></span><br>
+                        <textarea name = message rows="10" cols = "60" placeholder="Dejanos tu mensaje"></textarea> <br> 
+                        <input type="hidden" name="_autoresponse" value="your custom message">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_autoresponse" value="¡Gracias por contactarte con Psi-Tech! A la brevedad vamos a estar respondiendo tu consulta.">
+                        <input class="submit" type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        function validation()
+            {
+            var form = document.getElementById("form");
+            var email = document.getElementById("email").value;
+            var text = document.getElementById("text");
+            var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}(\.[a-z]{2,3})?$/;
+            
+            if (email.match(pattern))
+            {
+                form.classList.add("valid");
+                form.classList.remove("invalid");
+                text.innerHTML = "";
+            }
+            else
+            {
+                form.classList.remove("valid");
+                form.classList.add("invalid");
+                text.innerHTML = "Por favor ingresá un Email válido";
+                text.style.color = "#ff4500";
+            }
+
+            if (email == "")
+            {
+                form.classList.remove("valid");
+                form.classList.remove("invalid");
+                text.innerHTML = "";
+            }
+
+            }
+
+    </script>
+
+    <footer class="contactanosFooter">
+        
+        <div class="socialNetwork">
+            <a href="" class="sNLink"> <i class="fab fa-instagram"> </i> </a>
+            <a href="" class="sNLink"> <i class="fab fa-2x fa-facebook-square"> </i> </a>
+            <a href="" class="sNLink"> <i class="fab fa-whatsapp"> </i> </a>
+        </div>
+
+        <div class="adress">
+            <p> Av. La Salle 3100 - CP 1852 <span> <i class="fas fa-map-marker-alt"></i> </span></p>
+            <p> Buenos Aires - Argentina </p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

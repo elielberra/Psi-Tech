@@ -1,0 +1,360 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto Mono', monospace;
+color: #09d5f0;
+}
+
+body{ 
+    background-color: #122349;							
+}
+
+header{
+    background-color: #04102c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.imgLogo {
+    height: 80px;
+    position: absolute;
+    left: 0;  
+}
+
+.menuNav {
+    margin-right: 50px;
+    }
+
+.menuNav li{
+    list-style: none;
+    display: inline-block;
+}
+
+
+.menuNav li a {
+    text-decoration: none;
+    transition: 1s;
+    padding: 30px 20px;
+}
+
+.menuNav li a:hover {
+    background-color: #0b318b;
+    position: relative;
+    top: 10px;
+}
+
+.banner {
+    position: absolute;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-image: url(../Images/Neural.gif);
+    background-size:cover;
+    }   
+
+
+
+.bannerP {
+    z-index: 10;
+    position: absolute;
+    font-size: 0.9em;
+    text-align: center;
+    max-width: 50vw;
+    background-color: #b4caffc7;
+    color: #0a1c45;
+    border-radius: 10px;
+    padding: 1vw;
+}
+
+.empresa {
+    width: 80vw;
+    height: 45vh;
+    background-color: #b4caffc7;
+    position: absolute;
+    top: 80vh;
+    left: 10%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.empresa h2{
+    text-align: center;
+    font-size: 2.5em;    
+    margin-bottom: 5vh;
+    text-decoration: underline;
+    color: #0a1c45;
+}
+
+.empresa p{
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 75vw;
+    color: #0a1c45;
+}
+
+footer {
+    width: 100vw;
+    background-color: #04102c;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.indexFooter{
+    position: relative;
+    top: 135vh;
+}
+
+.adress {
+    width: 30vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    position: relative;
+    bottom: 5vh;
+}
+
+.adress i  {
+    font-size: 1.5 em;
+}
+.socialNetwork {
+    position: relative;
+    bottom: 5vh;
+    
+}
+
+.socialNetwork i {
+    font-size: 2em;
+    text-decoration: none;
+    padding: 0vh 1.5vw;
+}
+
+.socialNetwork a {
+    text-decoration: none;
+}
+
+.socialNetwork a:hover {
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+
+/*.adress i{
+    font-size: 2em;
+    position: absolute;
+    left: 3.5em;
+    bottom: 0.2em;
+}
+
+.adress a:hover {
+    transition: 0.5s;
+}*/
+
+/* Css for Proyectos */
+.container {
+    position: relative;
+    top: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.container .box {
+    position: relative;
+    width: 350px;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container .box {
+    align-items: center;
+    background-color: #04102c;
+    margin: 3vw 1.5vw; 
+    transition: 1s;
+}
+
+.container .box:hover {
+    transform: translateY(-5vh);
+}
+
+.container .box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #011441, #0298fc);
+    filter: blur(2vw);
+}
+
+.container .box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #011441, #02dffc);
+    filter: blur(2vw);
+}
+
+.container .box:nth-child(2)::before,
+.container .box:nth-child(2)::after {
+    background: linear-gradient(45deg, #02dffc, #011441)
+}
+
+.container .box span{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    left: 1em;
+    bottom: 1em;
+    background-color: #0007188f;
+    z-index: 10;
+}
+
+.container .box .content {
+    position: relative;
+    z-index: 20;
+    padding: 2em;
+    text-align: center;
+}
+
+.container .box .content h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #a4bdf8;
+}
+
+.container .box .content p {
+    font-size: 0.8em;
+    margin-bottom: 2em;
+    text-align: justify;
+    color: #a4bdf8;
+}
+
+.container .box .content a{
+    font-size: 0.8em;
+}
+
+.proyectosFooter {
+    position: relative;
+    top: 30vh;
+}
+
+
+
+/* CSS for Contactanos  */
+.contactanosFooter {
+    position: relative;
+    top: 100vh;
+}
+
+
+.boxContactanos {
+    position: relative;
+    top: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.CV {
+    position: relative;
+}
+
+.formCV input {
+    width: 300px;
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    padding: 6px;
+}
+
+
+
+
+
+.mensaje {
+    position: relative;
+    top: 10vh;
+}
+
+#inputBox {
+    position: relative ;
+}
+
+input{
+    width: 300px;
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    padding: 6px;   
+}
+
+.formCV .submit {
+    width: 100px;
+}
+
+.submit {
+    width: 100px;
+}
+
+
+
+#text {
+    font-style: italic;
+    display: block;
+    font-size: 0.8em;
+}
+
+#form.invalid #inputBox::after{
+    content: "";
+    position: absolute;
+    background-image: url(../Images/invalid.png);
+    background-size: cover;
+    z-index: 1000000;
+    height: 1em;
+    width: 1em;
+    top: 0.5em;
+    left: 280px;
+}
+
+#form.valid #inputBox::after{
+    content: "";
+    position: absolute;
+    background-image: url(../Images/valid.png);
+    background-size: cover;
+    z-index: 1000000;
+    height: 1em;
+    width: 1em;
+    top: 0.5em;
+    left: 280px;
+}
+
+textarea {
+    border: none;
+    border-radius: 6px;
+}
+
