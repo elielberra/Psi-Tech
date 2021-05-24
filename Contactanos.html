@@ -21,7 +21,7 @@
                 <li><a href="Index.html"> <i class="fas fa-home"></i> </a></li>
                 <li><a href="Inteligencia Artificial.html"> Inteligencia Artificial </a></li>
                 <li><a href="Áreas.html"> Áreas </a></li>
-                <li><a href="Socios Comerciales.html"> Socios Comerciales </a></li>
+                <li><a href="Socios.html"> Socios</a></li>
                 <li><a href="Contactanos.html"> Contactanos </a></li>
             </ul>
         </nav>        
@@ -30,27 +30,63 @@
     <section>
         <div class="boxContactanos">
             <div class="CV">
-                <form class="formCV" action="https://formsubmit.co/berraeliel@gmail.com" method="POST" enctype=multipart/form-data>
+                <form id="form1" class="formCV" action="https://formsubmit.co/berraeliel@gmail.com" method="POST" enctype=multipart/form-data>
                     <label> Adjuntá tu CV </label> <br>
-                    <input type="file" name="attachment" accept="image/png, image/jpeg" required> <br>
+                    <input type="file" name="attachment" accept="image/png, image/jpeg, doc/pdf, doc/txt" required> <br>
                     <label> Podés dejarnos tu perfil de Linkedin también </label> <br>
                         <input type="url" name="linkedin" placeholder="linkedin.com/in/nombre-apellido"> <br>
                         <input type="hidden" name="_autoresponse" value="Gracias por dejarnos tu CV, lo vamos a tener en cuenta para futuras búsquedas laborales.">
                     <label for="email"> Ingresá tu Email </label> <br>   
-                        <input type="email" name="email" required> <br>
+                    <div id="inputBox1">
+                        <input type="text" type="email" id="email1" name="email" required autocomplete="on" onchange="validation1()" onClick="validation1()" onkeydown="validation1()">
+                    </div>    
+                        <span id="text1"></span><br>
                         <input class="submit" type="submit" value="Enviar">
                 </form>
             </div>
+
+            <!--  <script type="text/javascript">
+                function validation1()
+                    {
+                    var form = document.getElementById("form1");
+                    var email = document.getElementById("email1").value;
+                    var text = document.getElementById("text1");
+                    var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}(\.[a-z]{2,3})?$/;
+                    
+                    if (email.match(pattern))
+                    {
+                        form1.classList.add("valid");
+                        form.classList.remove("invalid");
+                        text1.innerHTML = "";
+                    }
+                    else
+                    {
+                        form1.classList.remove("valid");
+                        form1.classList.add("invalid");
+                        text1.innerHTML = "Por favor ingresá un Email válido";
+                        text1.style.color = "#ff4500";
+                    }
+        
+                    if (email1 == "")
+                    {
+                        form1.classList.remove("valid");
+                        form1.classList.remove("invalid");
+                        text1.innerHTML = "";
+                    }
+        
+                    }
+        
+            </script>  -->
                 
             <div class="mensaje">
-                <form id="form" action="https://formsubmit.co/berraeliel@gmail.com" method="POST"> 
+                <form id="form2" action="https://formsubmit.co/berraeliel@gmail.com" method="POST"> 
                     <label for="name"> Nombre y Apellido </label> <br>
                         <input type="text" id="name" name="name" required autocomplete="on"> <br> 
                     <label for="email"> Ingresá tu Email </label>
-                    <div id="inputBox">
-                        <input type="text" type="email" id="email" name="email" required autocomplete="on" onchange="validation()" onClick="validation()" onkeydown="validation()">
+                    <div id="inputBox2">
+                        <input type="text" type="email" id="email2" name="email" required autocomplete="on" onchange="validation2()" onClick="validation2()" onkeydown="validation2()">
                     </div>    
-                    <span id="text"></span><br>
+                    <span id="text2"></span><br>
                         <textarea name = message rows="10" cols = "60" placeholder="Dejanos tu mensaje"></textarea> <br> 
                         <input type="hidden" name="_autoresponse" value="your custom message">
                         <input type="hidden" name="_captcha" value="false">
@@ -61,36 +97,10 @@
         </div>
     </section>
 
+    
+
     <script type="text/javascript">
-        function validation()
-            {
-            var form = document.getElementById("form");
-            var email = document.getElementById("email").value;
-            var text = document.getElementById("text");
-            var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}(\.[a-z]{2,3})?$/;
-            
-            if (email.match(pattern))
-            {
-                form.classList.add("valid");
-                form.classList.remove("invalid");
-                text.innerHTML = "";
-            }
-            else
-            {
-                form.classList.remove("valid");
-                form.classList.add("invalid");
-                text.innerHTML = "Por favor ingresá un Email válido";
-                text.style.color = "#ff4500";
-            }
-
-            if (email == "")
-            {
-                form.classList.remove("valid");
-                form.classList.remove("invalid");
-                text.innerHTML = "";
-            }
-
-            }
+        
 
     </script>
 
@@ -108,6 +118,7 @@
         </div>
 
     </footer>
-
+    
+    <script rel="stylesheet" src="JS/Contactanos.js"></script>
 </body>
 </html>

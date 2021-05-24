@@ -260,7 +260,67 @@ footer {
     position: relative;
     top: 30vh;
 }
+/* End of CSS for "Areas"*/
 
+
+/*CSS for "Socios Comerciales"*/
+
+.sociosComercialesBanner {
+    position: relative;
+    top: 20vh;
+}
+
+.bigBoxSalud {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bigBoxIA {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bigBoxSoftware {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bigBoxEducacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.boxes{
+    width: 300px;
+    height: 300px;
+    background-color: #011441;
+    border: 5px ridge white;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxImg{
+    width: 13em;
+}
+
+.sociosComercialesFooter {
+    position: relative;
+    top: 100vh;
+}
 
 
 /* CSS for Contactanos  */
@@ -301,7 +361,11 @@ footer {
     top: 10vh;
 }
 
-#inputBox {
+#inputBox1 {
+    position: relative ;
+}
+
+#inputBox2 {
     position: relative ;
 }
 
@@ -323,13 +387,13 @@ input{
 
 
 
-#text {
+#text1 {
     font-style: italic;
     display: block;
     font-size: 0.8em;
 }
 
-#form.invalid #inputBox::after{
+#form1.invalid #inputBox1::after{
     content: "";
     position: absolute;
     background-image: url(../Images/invalid.png);
@@ -341,7 +405,31 @@ input{
     left: 280px;
 }
 
-#form.valid #inputBox::after{
+#form1.valid #inputBox1::after{
+    content: "";
+    position: absolute;
+    background-image: url(../Images/valid.png);
+    background-size: cover;
+    z-index: 1000000;
+    height: 1em;
+    width: 1em;
+    top: 0.5em;
+    left: 280px;
+}
+
+#form2.invalid #inputBox2::after{
+    content: "";
+    position: absolute;
+    background-image: url(../Images/invalid.png);
+    background-size: cover;
+    z-index: 1000000;
+    height: 1em;
+    width: 1em;
+    top: 0.5em;
+    left: 280px;
+}
+
+#form2.valid #inputBox2::after{
     content: "";
     position: absolute;
     background-image: url(../Images/valid.png);
