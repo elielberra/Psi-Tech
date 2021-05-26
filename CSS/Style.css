@@ -25,7 +25,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
+    height: 40px;
     z-index: 100;
     display: flex;
     justify-content: flex-end;
@@ -35,30 +35,103 @@ header{
 
 .imgLogo {
     margin: 0;
-    height: 80px;
+    height: 40px;
     position: absolute;
     left: 0;  
 }
 
-.menuNav {
+.navbar-links {
     margin-right: 50px;
     }
 
-.menuNav li{
+.navbar-links li{
     list-style: none;
     display: inline-block;
 }
 
+.navbar-links li:nth-child(2) {
+    display: none;
+}
 
-.menuNav li a {
+
+.navbar-links li a {
     text-decoration: none;
     transition: 1s;
-    padding: 30px 20px;
+    padding: 10px 10px;
 }
 
-.menuNav li a:hover {
-    background-color: #0b318b;
+.navbar-links ul li a:hover {
+    background-color: #f1f5f8;
 }
+
+.toggle-button {
+    position: relative;
+    right: 50vw;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #02dffc;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+        z-index: 10000;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    
+    .navbar-links ul {
+        position: relative;
+        left: 33%;
+        width: 100vw;
+        flex-direction: row;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links li:nth-child(1) {
+        display: none;
+    }
+
+    .navbar-links li:nth-child(2) {
+        display: inline-block;
+    }
+
+    .navbar-links ul li a {
+        padding: 0;
+        margin-left: 2vw;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        position: relative;
+        top: 20px;
+        background-color: #032269;
+    }
+}
+
+/* End of Mediaquery for Navbar*/
+
 
 .banner {
     position: absolute;
@@ -71,8 +144,6 @@ header{
     background-image: url(../Images/Neural.gif);
     background-size:cover;
     }   
-
-
 
 .bannerP {
     z-index: 10;
@@ -148,7 +219,6 @@ footer {
 .socialNetwork {
     position: relative;
     bottom: 5vh;
-    
 }
 
 .socialNetwork i {
@@ -166,18 +236,81 @@ footer {
     transition: 0.5s;
 }
 
-/*.adress i{
-    font-size: 2em;
-    position: absolute;
-    left: 3.5em;
-    bottom: 0.2em;
+/*End of index*/
+
+
+
+
+
+/*CSS for Inteligencia Artificial*/
+
+.textoIA {
+    margin: 10vw;
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
-.adress a:hover {
-    transition: 0.5s;
-}*/
+.bigTitleIA{    
+    align-self: center;
+    margin-bottom: 40px;
+    font-size: 3.5em;
+    background-color: #011441;
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+}
 
-/* Css for Proyectos */
+.titleIA{
+    font-size: 2.5em;
+    margin: 20px 0px;
+}
+
+.pIA {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.subtitleIA {
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+.historia{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 15vw;
+}
+
+.turingImg{
+    width: 100px;
+}
+
+.historiaP{
+    text-align: justify;
+    width: 87%;
+    position: relative;
+}
+
+
+
+.backpropagationImg{
+    height: 55vh;
+}
+
+/*End of Inteligencia Artificial*/
+
+
+
+
+
+
+/* Css for Areas */
 .container {
     position: relative;
     top: 25vh;
@@ -272,7 +405,12 @@ footer {
     position: relative;
     top: 30vh;
 }
+
 /* End of CSS for "Areas"*/
+
+
+
+
 
 
 /*CSS for "Socios Comerciales"*/
@@ -334,8 +472,15 @@ footer {
     top: 100vh;
 }
 
+/* End of Socios */
+
+
+
+
+
 
 /* CSS for Contactanos  */
+
 .contactanosFooter {
     position: relative;
     top: 100vh;
