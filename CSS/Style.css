@@ -1,17 +1,26 @@
 *{
-margin:0;
+margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: 'Roboto Mono', monospace;
-color: #09d5f0;
+color: #1b08c9;
 }
 
 body{ 
-    background-color: #122349;							
+    background-color: white;							
+}
+
+a{
+    color: #02dffc;
+}
+
+.fas, .fab{
+    color: #02dffc;
 }
 
 header{
-    background-color: #04102c;
+    margin: 0;
+    background-color: #032269;
     position: fixed;
     top: 0;
     left: 0;
@@ -25,6 +34,7 @@ header{
 }
 
 .imgLogo {
+    margin: 0;
     height: 80px;
     position: absolute;
     left: 0;  
@@ -48,8 +58,6 @@ header{
 
 .menuNav li a:hover {
     background-color: #0b318b;
-    position: relative;
-    top: 10px;
 }
 
 .banner {
@@ -128,8 +136,12 @@ footer {
     font-size: 0.75em;
     position: relative;
     bottom: 5vh;
+    color: white;
 }
 
+.adress p{
+    color: white;
+}
 .adress i  {
     font-size: 1.5 em;
 }

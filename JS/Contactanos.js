@@ -28,6 +28,7 @@ function validation1()
         
                     }
 
+
                     function validation2()
                     {
                     var form = document.getElementById("form2");
@@ -51,9 +52,9 @@ function validation1()
         
                     if (email == "")
                     {
-                        form.classList.remove("valid");
-                        form.classList.remove("invalid");
-                        text.innerHTML = "";
+                        form2.classList.remove("valid");
+                        form2.classList.remove("invalid");
+                        text2.innerHTML = "";
                     }
         
                     }
