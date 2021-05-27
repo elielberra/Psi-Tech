@@ -16,10 +16,9 @@ body {
     color: white;
 }
 
-.brand-title {
-    font-size: 1.5rem;
-    margin: .5rem;
-}
+.imgLogo {
+    width: 60px;
+}    
 
 .navbar-links {
     height: 100%;
