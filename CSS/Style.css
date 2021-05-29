@@ -32,7 +32,7 @@ a{
 
 .navbar-links {
     height: 100%;
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 .navbar-links ul {
@@ -257,6 +257,12 @@ footer {
 
 .backpropagationImg{
     height: 55vh;
+}
+
+.video {
+    display; flex; 
+    align-self: center;
+    margin-bottom: 30px;
 }
 
 .iAFooter{
