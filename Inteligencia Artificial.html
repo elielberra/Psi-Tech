@@ -10,23 +10,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/all.min.css">
     <link rel="icon" href="Images/Logo.jpg">
+    <script src="JS/Navbar.js" defer></script>
     <title> Inteligencia Artificial </title>
 </head>
 <body>    
     
-    <header>
-        <img src="Images/Logo.jpg" class="imgLogo">
-
-        <nav class="menuNav">
-            <ul>
-                <li><a href="Index.html"> <i class="fas fa-home"></i> </a></li>
-                <li><a href="Inteligencia Artificial.html"> Inteligencia Artificial </a></li>
-                <li><a href="Áreas.html"> Áreas </a></li>
-                <li><a href="Socios.html"> Socios</a></li>
-                <li><a href="Contactanos.html"> Contactanos </a></li>
-            </ul>
-        </nav>        
-    </header>
+    <nav class="navbar">
+        <img src = "Images/Logo.jpg" class="imgLogo">
+        <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+        <ul>
+            <li><a href="Index.html"> <i class="fas fa-home"></i> </a></li>
+            <li><a href="Inteligencia Artificial.html"> Inteligencia Artificial </a></li>
+            <li><a href="Inteligencia Artificial.html"> IA </a></li>
+            <li><a href="Áreas.html"> Áreas </a></li>
+            <li><a href="Socios.html"> Socios </a></li>
+            <li><a href="Contactanos.html"> Contactanos </a></li>
+        </ul>
+        </div>
+    </nav>
 
     <section class="textoIA">
         
@@ -126,10 +132,24 @@
         las necesidades del mercado.  </p>
 
     </section>
-    <a href="#" data-toggle="tooltip" data-html="true" title="Hola"> Hola </a>
+    
+    
+    <footer class="iAFooter">
+        
+        <div class="socialNetwork">
+            <a href="https://www.instagram.com/psytechdevelop/" class="sNLink"> <i class="fab fa-instagram"> </i> </a>
+            <a href="https://www.facebook.com/Psy-Tech-105692078386068" class="sNLink"> <i class="fab fa-2x fa-facebook-square"> </i> </a>
+            <a href="https://wa.me/5491140287143?text=%C2%A1Hola!%20Quiero%20hablar%20con%20un%20representante%20de%20Psi-Tec" class="sNLink"> <i class="fab fa-whatsapp"> </i> </a>
+        </div>
 
+        <div class="adress">
+            <p> Av. La Salle 3100 - CP 1852 <span> <i class="fas fa-map-marker-alt"></i> </span></p>
+            <p> Buenos Aires - Argentina </p>
+        </div>
+
+    </footer>
     
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

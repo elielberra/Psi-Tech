@@ -7,7 +7,7 @@ color: #1b08c9;
 }
 
 body{ 
-    background-color: white;							
+    background-color: rgb(56, 57, 134);							
 }
 
 a{
@@ -18,55 +18,56 @@ a{
     color: #02dffc;
 }
 
-header{
-    margin: 0;
-    background-color: #032269;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    z-index: 100;
+.navbar {
     display: flex;
-    justify-content: flex-end;
+    position: relative;
+    justify-content: space-between;
     align-items: center;
-    transition: 0.5s;
+    background-color: #04102c;
 }
 
 .imgLogo {
-    margin: 0;
-    height: 40px;
-    position: absolute;
-    left: 0;  
-}
+    width: 65px;
+}    
 
 .navbar-links {
+    height: 100%;
     margin-right: 50px;
-    }
-
-.navbar-links li{
-    list-style: none;
-    display: inline-block;
 }
 
-.navbar-links li:nth-child(2) {
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #02dffc;
+    padding: 1rem;
+}
+
+
+.navbar-links li:nth-child(3) {
     display: none;
 }
 
 
-.navbar-links li a {
-    text-decoration: none;
-    transition: 1s;
-    padding: 10px 10px;
-}
-
-.navbar-links ul li a:hover {
-    background-color: #f1f5f8;
+.navbar-links li:hover {
+    background-color: #1b08c9;
+    transition: 0.5s;
 }
 
 .toggle-button {
-    position: relative;
-    right: 50vw;
+    position: absolute;
+    align-self: center;
+    top: 10px;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -80,58 +81,6 @@ header{
     background-color: #02dffc;
     border-radius: 10px;
 }
-
-@media (max-width: 800px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .toggle-button {
-        display: flex;
-        z-index: 10000;
-    }
-
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-
-    
-    .navbar-links ul {
-        position: relative;
-        left: 33%;
-        width: 100vw;
-        flex-direction: row;
-    }
-
-    .navbar-links ul li {
-        text-align: center;
-    }
-
-    .navbar-links li:nth-child(1) {
-        display: none;
-    }
-
-    .navbar-links li:nth-child(2) {
-        display: inline-block;
-    }
-
-    .navbar-links ul li a {
-        padding: 0;
-        margin-left: 2vw;
-    }
-
-    .navbar-links.active {
-        display: flex;
-        position: relative;
-        top: 20px;
-        background-color: #032269;
-    }
-}
-
-/* End of Mediaquery for Navbar*/
-
 
 .banner {
     position: absolute;
@@ -198,6 +147,7 @@ footer {
 .indexFooter{
     position: relative;
     top: 135vh;
+    height: 100px;
 }
 
 .adress {
@@ -207,11 +157,11 @@ footer {
     font-size: 0.75em;
     position: relative;
     bottom: 5vh;
-    color: white;
+    color: #1b08c9;
 }
 
 .adress p{
-    color: white;
+    color: #02dffc;
 }
 .adress i  {
     font-size: 1.5 em;
@@ -231,9 +181,20 @@ footer {
     text-decoration: none;
 }
 
-.socialNetwork a:hover {
-    font-size: 1.5em;
-    transition: 0.5s;
+@media only screen and (max-width: 768px){
+.empresa {
+    height: 55vh;
+}
+}
+
+@media only screen and (max-width: 600px){
+.empresa {
+    height: 75vh;
+}
+
+.indexFooter{
+    top: 155vh;
+}
 }
 
 /*End of index*/
@@ -245,12 +206,12 @@ footer {
 /*CSS for Inteligencia Artificial*/
 
 .textoIA {
-    margin: 10vw;
+    margin: 5vw;
     position: relative;
-    top: 50px;
     display: flex;
     flex-direction: column;
-    
+    background-color: #b4caffc7;
+    padding: 10px;
 }
 
 .bigTitleIA{    
@@ -287,9 +248,6 @@ footer {
     height: 15vw;
 }
 
-.turingImg{
-    width: 100px;
-}
 
 .historiaP{
     text-align: justify;
@@ -297,10 +255,20 @@ footer {
     position: relative;
 }
 
-
-
 .backpropagationImg{
     height: 55vh;
+}
+
+.iAFooter{
+    position: relative;
+    top: 10px;
+}
+@media only screen and (max-width: 768px){
+
+}
+
+@media only screen and (max-width: 600px){
+    
 }
 
 /*End of Inteligencia Artificial*/
@@ -313,7 +281,7 @@ footer {
 /* Css for Areas */
 .container {
     position: relative;
-    top: 25vh;
+    top: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -401,11 +369,18 @@ footer {
     font-size: 0.8em;
 }
 
-.proyectosFooter {
+.areasFooter {
     position: relative;
-    top: 30vh;
+    top: 5vh;
 }
 
+@media only screen and (max-width: 768px){
+
+}
+
+@media only screen and (max-width: 600px){
+    
+}
 /* End of CSS for "Areas"*/
 
 
@@ -413,11 +388,24 @@ footer {
 
 
 
-/*CSS for "Socios Comerciales"*/
+/*CSS for "Socios"*/
 
-.sociosComercialesBanner {
+.socios{
+    margin: 2vw 10vw;
     position: relative;
-    top: 20vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #b4caffc7;
+    padding: 25px;
+}
+
+.socios p{
+    text-align: justify;
+}
+
+.socios a{
+    margin-bottom: 35px;
+    text-align: center;
 }
 
 .bigBoxSalud {
@@ -454,7 +442,7 @@ footer {
 
 .boxes{
     width: 300px;
-    height: 300px;
+    height: 150px;
     background-color: #011441;
     border: 5px ridge white;
     margin: 20px 0px;
@@ -464,12 +452,20 @@ footer {
 }
 
 .boxImg{
-    width: 13em;
+    width: 10em;
 }
 
-.sociosComercialesFooter {
+.sociosFooter {
     position: relative;
-    top: 100vh;
+    top: 5vh;
+}
+
+@media only screen and (max-width: 768px){
+
+}
+
+@media only screen and (max-width: 600px){
+    
 }
 
 /* End of Socios */
@@ -481,24 +477,24 @@ footer {
 
 /* CSS for Contactanos  */
 
-.contactanosFooter {
-    position: relative;
-    top: 100vh;
-}
+
 
 
 .boxContactanos {
     position: relative;
-    top: 25vh;
+    top: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 5px;
+    
 }
 
 .CV {
     position: relative;
+    background-color: #a4bdf8;
+    padding: 2vw 5vw;
 }
 
 .formCV input {
@@ -510,12 +506,12 @@ footer {
 }
 
 
-
-
-
 .mensaje {
     position: relative;
     top: 10vh;
+    background-color: #a4bdf8;
+    padding: 2vw 5vw;
+    margin-bottom: 25vh;
 }
 
 #inputBox1 {
@@ -541,8 +537,6 @@ input{
 .submit {
     width: 100px;
 }
-
-
 
 #text1 {
     font-style: italic;
@@ -603,3 +597,77 @@ textarea {
     border-radius: 6px;
 }
 
+
+@media only screen and (max-width: 768px){
+
+}
+
+@media only screen and (max-width: 600px){
+    
+}
+
+
+/*End of Contactanos*/
+
+
+
+
+
+/*Media query for Navbar*/
+
+@media only screen and (max-width: 768px){
+    .navbar-links li:nth-child(2) {
+        display: none;
+    }
+
+    .navbar-links li:nth-child(3) {
+        display: inline-block;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+        
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links li:nth-child(2) {
+        display: none;
+    }
+
+    .navbar-links li:nth-child(3) {
+        display: inline-block;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+/* End of Mediaquery for Navbar*/

@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="CSS/Style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="icon" href="Images/Logo.jpg">
+    <script src="JS/Navbar.js" defer></script>
     <title>Psi-Tech - Contactanos</title>
-    
 </head>
 <body>
     
-    <header>
-        <img src="Images/Logo.jpg" class="imgLogo">
-
-        <nav class="menuNav">
-            <ul>
-                <li><a href="Index.html"> <i class="fas fa-home"></i> </a></li>
-                <li><a href="Inteligencia Artificial.html"> Inteligencia Artificial </a></li>
-                <li><a href="Áreas.html"> Áreas </a></li>
-                <li><a href="Socios.html"> Socios</a></li>
-                <li><a href="Contactanos.html"> Contactanos </a></li>
-            </ul>
-        </nav>        
-    </header>
+    <nav class="navbar">
+        <img src = "Images/Logo.jpg" class="imgLogo">
+        <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+        <ul>
+            <li><a href="Index.html"> <i class="fas fa-home"></i> </a></li>
+            <li><a href="Inteligencia Artificial.html"> Inteligencia Artificial </a></li>
+            <li><a href="Inteligencia Artificial.html"> IA </a></li>
+            <li><a href="Áreas.html"> Áreas </a></li>
+            <li><a href="Socios.html"> Socios </a></li>
+            <li><a href="Contactanos.html"> Contactanos </a></li>
+        </ul>
+        </div>
+    </nav>
     
     <section>
         <div class="boxContactanos">
@@ -54,7 +59,7 @@
                         <input type="text" type="email" id="email2" name="email" required autocomplete="on" onchange="validation2()" onClick="validation2()" onkeydown="validation2()">
                     </div>    
                     <span id="text2"></span><br>
-                        <textarea name = message rows="10" cols = "60" placeholder="Dejanos tu mensaje"></textarea> <br> 
+                        <textarea name = message rows="10" cols = "51" placeholder="Dejanos tu mensaje"></textarea> <br> 
                         <input type="hidden" name="_autoresponse" value="your custom message">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_autoresponse" value="¡Gracias por contactarte con Psi-Tech! A la brevedad vamos a estar respondiendo tu consulta.">
@@ -68,9 +73,9 @@
     <footer class="contactanosFooter">
         
         <div class="socialNetwork">
-            <a href="" class="sNLink"> <i class="fab fa-instagram"> </i> </a>
-            <a href="" class="sNLink"> <i class="fab fa-2x fa-facebook-square"> </i> </a>
-            <a href="" class="sNLink"> <i class="fab fa-whatsapp"> </i> </a>
+            <a href="https://www.instagram.com/psytechdevelop/" class="sNLink"> <i class="fab fa-instagram"> </i> </a>
+            <a href="https://www.facebook.com/Psy-Tech-105692078386068" class="sNLink"> <i class="fab fa-2x fa-facebook-square"> </i> </a>
+            <a href="https://wa.me/5491140287143?text=%C2%A1Hola!%20Quiero%20hablar%20con%20un%20representante%20de%20Psi-Tec" class="sNLink"> <i class="fab fa-whatsapp"> </i> </a>
         </div>
 
         <div class="adress">

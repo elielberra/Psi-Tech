@@ -8,22 +8,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/all.min.css">
+    <script src="JS/Navbar.js" defer></script>
+    <link rel="icon" href="Images/Logo.jpg">
     <title> Socios Comerciales </title>
 </head>
 <body>
-    <header>
-        <img src="Images/Logo.jpg" class="imgLogo">
-
-        <nav class="menuNav">
-            <ul>
-                <li><a href="index.html"> <i class="fas fa-home"></i> </a></li>
-                <li><a href="Inteligencia Artificial.html"> Inteligencia Artificial </a></li>
-                <li><a href="Áreas.html"> Áreas </a></li>
-                <li><a href="Socios.html"> Socios </a></li>
-                <li><a href="Contactanos.html"> Contactanos </a></li>
-            </ul>
-        </nav>        
-    </header>
+    <nav class="navbar">
+        <img src = "Images/Logo.jpg" class="imgLogo">
+        <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+        <ul>
+            <li><a href="Index.html"> <i class="fas fa-home"></i> </a></li>
+            <li><a href="Inteligencia Artificial.html"> Inteligencia Artificial </a></li>
+            <li><a href="Inteligencia Artificial.html"> IA </a></li>
+            <li><a href="Áreas.html"> Áreas </a></li>
+            <li><a href="Socios.html"> Socios </a></li>
+            <li><a href="Contactanos.html"> Contactanos </a></li>
+        </ul>
+        </div>
+    </nav>
 
     <section class="socios">
         
@@ -79,7 +86,7 @@
             </p>
             <div class="bigBoxEducacion">
                 <div class="boxes">
-                    <img src="Images/Codo a codo logo.jpg" alt="Logo from Codo a Codo" class="boxImg">
+                    <img src="Images/Codo a codo logo.jpg" alt="Logo from Codo a Codo" class="boxImg" style="width: 8em ;">
                 </div>
                 <div class="boxes">
                     <img src="Images/University of Copenhagen Logo.png" alt="Logo from University of Copenhagen" class="boxImg">
@@ -91,12 +98,13 @@
         
     </section>
 
-    <footer class="sociosComercialesFooter">
+    
+    <footer class="sociosFooter">
         
         <div class="socialNetwork">
-            <a href="" class="sNLink"> <i class="fab fa-instagram"> </i> </a>
-            <a href="" class="sNLink"> <i class="fab fa-2x fa-facebook-square"> </i> </a>
-            <a href="" class="sNLink"> <i class="fab fa-whatsapp"> </i> </a>
+            <a href="https://www.instagram.com/psytechdevelop/" class="sNLink"> <i class="fab fa-instagram"> </i> </a>
+            <a href="https://www.facebook.com/Psy-Tech-105692078386068" class="sNLink"> <i class="fab fa-2x fa-facebook-square"> </i> </a>
+            <a href="https://wa.me/5491140287143?text=%C2%A1Hola!%20Quiero%20hablar%20con%20un%20representante%20de%20Psi-Tec" class="sNLink"> <i class="fab fa-whatsapp"> </i> </a>
         </div>
 
         <div class="adress">
@@ -105,5 +113,6 @@
         </div>
 
     </footer>
+    
 </body>
 </html>
